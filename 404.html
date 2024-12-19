@@ -25,7 +25,7 @@
     <!-- Top Bar Start -->
     <section class="bg-primary py-5">
       <div
-        class="container mx-auto flex items-center justify-between text-white"
+        class="container mx-auto px-2 md:px-0 flex items-center justify-between text-white"
       >
         <span class="">Welcome to our online store!</span>
         <div class="flex items-center gap-2">
@@ -46,11 +46,11 @@
     <!-- Top Bar End -->
     <!-- Top Header Start -->
     <section>
-      <div class="container mx-auto flex items-center justify-between py-10">
+      <div class="container mx-auto px-2 md:px-0 flex items-center justify-between py-10">
         <div>
           <h2 class="font-bold text-primary text-2xl">STELINA</h2>
         </div>
-        <div class="relative">
+        <div class="relative hidden md:block">
           <input
             class="px-5 py-2 w-96 border rounded-full"
             placeholder="Search here"
@@ -121,7 +121,7 @@
     <!-- Top Header End -->
     <!-- Navbar Start -->
     <nav class="bg-tertiary">
-      <div class="container mx-auto text-sm flex items-center gap-10">
+      <div class="container mx-auto px-2 md:px-0 text-sm flex items-center gap-10">
         <div
           class="px-7 py-4 flex items-center font-bold gap-3 bg-primary text-white"
         >
@@ -140,7 +140,7 @@
           <button>ALL CATEGORIES</button>
         </div>
         <div>
-          <ul class="flex items-center gap-10 font-bold uppercase">
+          <ul class="hidden md:flex items-center gap-10 font-bold uppercase">
             <li><a href="#">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About</a></li>
@@ -150,7 +150,7 @@
     </nav>
     <!-- Navbar End -->
     <section class="my-20">
-      <div class="container mx-auto flex items-center justify-center gap-10 px-48">
+      <div class="container mx-auto px-2 flex flex-col md:flex-row items-center justify-center gap-10 md:px-48">
         <div>
           <img
             src="https://dreamingtheme.kiendaotac.com/html/stelina/assets/images/404.png"
@@ -172,8 +172,8 @@
 
     <!-- Footer Section Start  -->
     <footer class="py-20 bg-tertiary">
-      <div class="grid grid-cols-3">
-        <div>
+      <div class="grid grid-cols-2 gap-5 md:grid-cols-3">
+        <div class="md:order-1">
           <ul class="flex items-center flex-col justify-center gap-1">
             <li class="text-sm font-medium uppercase">
               <a href="#">Quick Menu</a>
@@ -184,7 +184,7 @@
             <li class=""><a href="#">Dining</a></li>
           </ul>
         </div>
-        <div>
+        <div class="order-3 col-span-2 md:col-span-1 md:order-2 p-5 md:p-0">
           <h3 class="text-sm font-medium uppercase mb-4 text-center">
             Newsletter
           </h3>
@@ -256,7 +256,7 @@
             Copyright C 2020 Steline. All Rights Reserved
           </p>
         </div>
-        <div>
+        <div class="order-2 md:order-3">
           <ul class="flex items-center flex-col justify-center gap-1">
             <li class="text-sm font-medium uppercase">
               <a href="#">Information</a>

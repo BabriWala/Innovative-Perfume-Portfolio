@@ -25,7 +25,7 @@
     <!-- Top Bar Start -->
     <section class="bg-primary py-5">
       <div
-        class="container mx-auto flex items-center justify-between text-white"
+        class="container mx-auto px-2 md:px-0 flex items-center justify-between text-white"
       >
         <span class="">Welcome to our online store!</span>
         <div class="flex items-center gap-2">
@@ -46,11 +46,13 @@
     <!-- Top Bar End -->
     <!-- Top Header Start -->
     <section>
-      <div class="container mx-auto flex items-center justify-between py-10">
+      <div
+        class="container mx-auto px-2 md:px-0 flex items-center justify-between py-10"
+      >
         <div>
           <h2 class="font-bold text-primary text-2xl">STELINA</h2>
         </div>
-        <div class="relative">
+        <div class="relative hidden md:block">
           <input
             class="px-5 py-2 w-96 border rounded-full"
             placeholder="Search here"
@@ -121,7 +123,9 @@
     <!-- Top Header End -->
     <!-- Navbar Start -->
     <nav class="bg-tertiary">
-      <div class="container mx-auto text-sm flex items-center gap-10">
+      <div
+        class="container mx-auto px-2 md:px-0 text-sm flex items-center gap-10"
+      >
         <div
           class="px-7 py-4 flex items-center font-bold gap-3 bg-primary text-white"
         >
@@ -140,7 +144,7 @@
           <button>ALL CATEGORIES</button>
         </div>
         <div>
-          <ul class="flex items-center gap-10 font-bold uppercase">
+          <ul class="hidden md:flex items-center gap-10 font-bold uppercase">
             <li><a href="#">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About</a></li>
@@ -151,7 +155,7 @@
     <!-- Navbar End -->
     <!-- Contact Us Start -->
     <section class="pb-20">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-2 md:px-0">
         <div class="py-8 flex items-center gap-2 text-sm">
           <a href="#">Home</a>
           <svg
@@ -169,15 +173,15 @@
         </div>
         <h2 class="text-xl font-semibold mb-10 uppercase">Checkout</h2>
         <!-- Shipping Start -->
-        <div class="container mx-auto">
-          <div class="border rounded ps-7 py-10 mb-6">
-            <div class="grid grid-cols-3 gap-20">
-              <div class="col-span-2">
+        <div class="container mx-auto px-2 md:px-0">
+          <div class="border rounded px-5 md:ps-7 py-10 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+              <div class="md:col-span-2">
                 <h3 class="pb-1 text-lg font-medium">Shipping Address</h3>
                 <div class="mb-6">
                   <span class="inline-block h-[2px] w-5 bg-primary"></span>
                 </div>
-                <div class="grid grid-cols-2 gap-5 mb-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                   <div>
                     <label class="text-sm mb-1">First name</label>
                     <input
@@ -193,7 +197,7 @@
                     />
                   </div>
                 </div>
-                <div class="grid grid-cols-3 gap-5 mb-5">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
                   <div>
                     <label class="text-sm mb-1">Country</label>
                     <select class="py-2 px-5 rounded-md w-full border">
@@ -219,7 +223,7 @@
                     </select>
                   </div>
                 </div>
-                <div class="grid grid-cols-2 gap-5 mb-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                   <div>
                     <label class="text-sm mb-1">Zip Code</label>
                     <input
@@ -296,10 +300,10 @@
         </div>
         <!-- Shipping End -->
         <!-- Pay Start -->
-        <div class="container mx-auto">
-          <div class="border rounded ps-7 py-10 mb-6">
-            <div class="grid grid-cols-3 gap-20">
-              <div class="col-span-2">
+        <div class="container mx-auto px-2 md:px-0">
+          <div class="border rounded px-5 md:ps-7 py-10 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+              <div class="md:col-span-2">
                 <h3 class="pb-1 text-lg font-medium">Payment Method</h3>
                 <div class="mb-6">
                   <span class="inline-block h-[2px] w-5 bg-primary"></span>
@@ -316,7 +320,7 @@
                     <span>PAYPAL</span>
                   </button>
                 </div>
-                <div class="grid grid-cols-2 gap-5 mb-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                   <div>
                     <label class="text-sm mb-1">Card number</label>
                     <input
@@ -325,7 +329,7 @@
                     />
                   </div>
                 </div>
-                <div class="grid grid-cols-3 gap-5 mb-5">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
                   <div>
                     <label class="text-sm mb-1">Month</label>
                     <select class="py-2 px-5 rounded-md w-full border">
@@ -417,9 +421,9 @@
         </div>
         <!-- Pay End -->
         <!-- Confirmation Start -->
-        <div class="container mx-auto">
+        <div class="container mx-auto px-2 md:px-0">
           <div
-            class="border rounded ps-7 py-10 mb-6 flex flex-col items-center justify-center"
+            class="border rounded px-5 md:ps-7 py-10 mb-6 flex flex-col items-center justify-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -457,8 +461,8 @@
 
     <!-- Footer Section Start  -->
     <footer class="py-20 bg-tertiary">
-      <div class="grid grid-cols-3">
-        <div>
+      <div class="grid grid-cols-2 gap-5 md:grid-cols-3">
+        <div class="md:order-1">
           <ul class="flex items-center flex-col justify-center gap-1">
             <li class="text-sm font-medium uppercase">
               <a href="#">Quick Menu</a>
@@ -469,7 +473,7 @@
             <li class=""><a href="#">Dining</a></li>
           </ul>
         </div>
-        <div>
+        <div class="order-3 col-span-2 md:col-span-1 md:order-2 p-5 md:p-0">
           <h3 class="text-sm font-medium uppercase mb-4 text-center">
             Newsletter
           </h3>
@@ -541,7 +545,7 @@
             Copyright C 2020 Steline. All Rights Reserved
           </p>
         </div>
-        <div>
+        <div class="order-2 md:order-3">
           <ul class="flex items-center flex-col justify-center gap-1">
             <li class="text-sm font-medium uppercase">
               <a href="#">Information</a>
